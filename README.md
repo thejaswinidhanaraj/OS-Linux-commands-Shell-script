@@ -43,22 +43,27 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![319428818-b7f546fa-4358-4013-a104-97fd773bdf04](https://github.com/user-attachments/assets/aae1ad03-777a-4a42-a23c-b205e0bf2b79)
 
 
 cat < file2
 ## OUTPUT
+![319428860-4fba90d4-0fb0-49ce-95d0-e3f3251fd076](https://github.com/user-attachments/assets/20b20ae5-48f3-47b4-a40d-67376f3cc87b)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![319428880-dd3c9ace-6547-43db-9376-092b9d7ce36c](https://github.com/user-attachments/assets/1bff3db8-a363-45ee-b3de-9667a9c5befd)
+
 comm file1 file2
  ## OUTPUT
 
- 
+ ![319428910-3bf10b6b-72c4-473a-b260-dfea58416ad1](https://github.com/user-attachments/assets/6e456b1c-8d27-428a-997a-15a25fce7fde)
+
 diff file1 file2
 ## OUTPUT
+![319428948-3cfa2e65-8cab-4fdd-a12a-098c79a58e90](https://github.com/user-attachments/assets/8327ec7d-6c12-42ee-974e-ebd85afb51c4)
 
 
 #Filters
@@ -84,16 +89,19 @@ cut -c1-3 file11
 ## OUTPUT
 
 
+![319429023-c573c7f6-9f5a-4854-8606-073f45491398](https://github.com/user-attachments/assets/ffd7c5d1-5eb6-49f2-8d7f-a6e293629642)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
+![319429034-c4770f82-6188-41ac-a0aa-386a31d0210f](https://github.com/user-attachments/assets/81070732-9a26-406b-9779-92f1faf5266e)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
+![319429078-9fee0b94-a3a0-4615-99c3-c1c6df894b85](https://github.com/user-attachments/assets/2e83d315-c793-4b90-8b12-7537c56ce94c)
 
 cat < newfile 
 ```
@@ -108,22 +116,26 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+![319429098-a12d1c94-407e-4081-9550-681d1f459a8b](https://github.com/user-attachments/assets/2a710280-4570-42a1-8d75-1a5c855eb128)
 
 
 grep hello newfile 
 ## OUTPUT
 
 
+![319429107-b6e084b5-5db6-4a6f-8c2f-71410c86f1bb](https://github.com/user-attachments/assets/ff9f5df6-c561-421d-9d0b-302c876ccb79)
 
 
 grep -v hello newfile 
 ## OUTPUT
 
 
+![319429118-9753ef93-0103-4f2f-b6c6-7eeca5a50894](https://github.com/user-attachments/assets/98b75fa0-d2b2-4c0d-b7c0-c4dda5c8f433)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+![319429140-713cd60f-e7f6-49f2-b237-f86c7c5d0f4e](https://github.com/user-attachments/assets/41fbe998-c41b-4910-9a0c-d7f576ec2ebe)
 
 
 
@@ -131,15 +143,12 @@ cat newfile | grep -i -c "hello"
 ## OUTPUT
 
 
+![319429153-32035f00-2cbe-4b3d-ba9f-ba76408fac1b](https://github.com/user-attachments/assets/35bcca85-4b97-49d2-971a-0553a7c8ef68)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
-
-
-grep -w -n world newfile   
-## OUTPUT
+![319429180-f1f4063b-872c-4ef5-b564-4f6f71258a70](https://github.com/user-attachments/assets/4ba3bfa4-0eab-49ca-b85e-83f7ec7cb072)
 
 
 cat < newfile 
@@ -164,59 +173,71 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
+![319429480-b1b1806d-7e8c-4be2-bf6d-ae6f68f8c16d](https://github.com/user-attachments/assets/8768455a-ee31-43b4-891e-eb57c1ff9d38)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
+![319429497-45807eb4-1895-42df-a17d-29b5be91f3d5](https://github.com/user-attachments/assets/edb007ef-99cf-44c3-a24e-7ac04981067c)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
 
+![319429524-d8b21ec4-5e48-4417-9b5d-0c2ca8c23467](https://github.com/user-attachments/assets/3436a462-a6f3-4328-a7b1-6d994ac11d91)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
+![319429544-8ce4f7f0-dfcf-4e0c-8073-14aaaa1199c1](https://github.com/user-attachments/assets/4a17191b-1991-483c-8938-b4158e18e6ac)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
+![319429558-33f03fe5-06b8-4015-aa52-8c20c4f9234d](https://github.com/user-attachments/assets/ad77ff51-fa16-4ed2-b6a3-4ba6cf79685b)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
+![319429568-1bb819a5-ab9f-4d04-bc47-06c9e5e27653](https://github.com/user-attachments/assets/001df498-08cf-48c7-8d8c-4e52b8fb1583)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
+![319429597-5f118111-b698-4aff-86c6-7f51a18ab6de](https://github.com/user-attachments/assets/0444163c-83cc-4681-8e5b-1237a8b3ac01)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
+![319429612-1ae7fa24-8a53-4911-821d-e1665720e38e](https://github.com/user-attachments/assets/56a071d6-c864-4750-9d30-0076f53b7343)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
+![319429631-f5207be6-4e7b-4ad0-a08b-6cccdee0b727](https://github.com/user-attachments/assets/34abb7cd-3501-406b-a31e-56ab5082802d)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![319429660-1aa5ee2c-b200-4135-9d70-fe0c077570b4](https://github.com/user-attachments/assets/c33bf44a-7c80-4368-809f-96a09cee4b9c)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![319429689-4d9b341a-e6a1-4293-8626-db2670e57542](https://github.com/user-attachments/assets/6d6f8dfb-d007-452d-a98e-7812726972f5)
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
+![319429713-4b872336-a8db-4739-a832-c704bdc290ba](https://github.com/user-attachments/assets/d46f029b-8787-4821-a8df-fef6c9cc9cd5)
 
 cat > file23
 ```
@@ -234,53 +255,63 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![319429740-44a01fbe-422e-485a-a22f-3c2a500d6932](https://github.com/user-attachments/assets/9958645c-e850-4952-b396-53fee930e42d)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
+![319429846-709af281-77ce-4c2d-8838-3e70457475a4](https://github.com/user-attachments/assets/fb1399c8-20c2-4a58-8e53-82af04017b2f)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![319429914-0e2004aa-11a2-425a-8ab3-f5cd99442e5a](https://github.com/user-attachments/assets/fee5ae1f-76b7-480c-a007-5a1c864c28aa)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
+![319430010-6b17f715-e898-445c-9dcf-8e931c010e3b](https://github.com/user-attachments/assets/b6014e51-71e3-4053-b9fb-d3ef213cda8d)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
+![319430032-7d74c34e-c552-4843-a075-63f9067aca24](https://github.com/user-attachments/assets/d412ce46-9754-4a7c-9149-bbbc224921b1)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![319430061-1ab92a40-ea52-4d36-a46f-420f361d58ac](https://github.com/user-attachments/assets/c3cc4379-af00-45f6-90c6-a6a0aeb7909d)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
+![319430073-2be25544-97f8-4630-b406-9f4776ee958b](https://github.com/user-attachments/assets/9e0bd5d9-49eb-41c6-9714-1febb7b6ad53)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![319430132-2268f0e7-579a-4a55-8fe1-67bb74cd3ed1](https://github.com/user-attachments/assets/2d3eee97-98a7-476d-8316-cd7e8a235761)
 
 
 
 seq 10 
 ## OUTPUT
+![319430254-44a7ea47-2616-4d0a-bae9-17da9e779169](https://github.com/user-attachments/assets/19fa0831-7f7b-4b9c-87b9-0978d0d500e6)
 
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
+![319430262-04dc11f3-6be0-4c27-a1bc-5be21f7278e1](https://github.com/user-attachments/assets/a5be3d75-e71b-474a-b07a-b87879463b25)
 
 
 seq 10 | sed -n '2,~4p'
@@ -290,20 +321,24 @@ seq 10 | sed -n '2,~4p'
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+![319430303-d234abfa-cda4-4fb2-8165-0dbfbbb9b26f](https://github.com/user-attachments/assets/abef0cbb-6908-41ea-abc5-3ef5b371c668)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![319430323-f5ec0595-dc0c-4d27-a7d2-7f5815ec056c](https://github.com/user-attachments/assets/c6a5a4b2-db1a-40cf-8d53-4ec6c43d31d4)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![319430340-586c40eb-e2a0-4ec0-86de-736a7cb32bf1](https://github.com/user-attachments/assets/cb5532fa-e4e3-4e4a-a754-cf7113403df4)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
+![319430353-2bf29007-b112-461a-bfa0-fd4332cfa0be](https://github.com/user-attachments/assets/2007e804-9369-4ac2-977f-6048de47da71)
 
 
 sed -n '2,4{s/$/*/;p}' file23
@@ -320,6 +355,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![319430425-8d0bf1fe-9dce-4202-bf35-ac135b7778a2](https://github.com/user-attachments/assets/de5230d9-a36f-41b9-bfc0-622c37b15749)
 
 
 cat > file22
@@ -334,12 +370,14 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+![319430447-67cd139d-f8ea-433a-b959-13b9e8cbcc8a](https://github.com/user-attachments/assets/996e5503-ebb9-4611-9d6f-87727d88cbde)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![319430477-2c88ffa0-ff83-400a-83fd-51a1822881f4](https://github.com/user-attachments/assets/95d54a1d-c396-40e2-832e-57f802798ca8)
 
 cat < urllist.txt
 ```
@@ -357,10 +395,12 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+![319430503-ccf8d42b-87c2-4a5a-8faf-c24a53024da5](https://github.com/user-attachments/assets/01f881e4-407c-4577-8a65-83cad986d257)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![319430558-073c27b4-adb7-4e3a-b901-d3828a715dbe](https://github.com/user-attachments/assets/e1a57867-21af-4ef0-85cc-9e2986dfe2d0)
 
 
 
@@ -368,6 +408,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 tar -cvf backup.tar *
 ## OUTPUT
 
+![319430645-e12aad28-de23-40ee-9f2b-85d989c8e24c](https://github.com/user-attachments/assets/d80a6adb-210b-4fca-b2f1-d80d4a7cc772)
 
 mkdir backupdir
  
@@ -378,19 +419,23 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+![319430766-d2ad8a74-7544-4c51-b368-f846976d49ef](https://github.com/user-attachments/assets/0b7a18dc-0c97-4275-8b2e-646c5ec910aa)
 
 tar -xvf backup.tar
 ## OUTPUT
+![319430795-0449668b-ab2f-4bdd-aee6-19fd5ae8ff0e](https://github.com/user-attachments/assets/cb00426a-f007-4f57-a338-a8032b5b8c28)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![319430873-5a66b934-9a7b-4ea5-885d-9bd736a46d1f](https://github.com/user-attachments/assets/9f133ddc-4d5e-40fb-8440-72f5caae7c06)
+
 gunzip backup.tar.gz
 ## OUTPUT
 
- 
+ ![319431041-18762b5d-f682-4bbb-8db6-f5010444fc09](https://github.com/user-attachments/assets/cc3d50ba-4cda-4ba1-afa4-148dd3002139)
+
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
@@ -399,6 +444,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+![319431069-daa97438-0c15-4018-ad8e-f3e00efb84f7](https://github.com/user-attachments/assets/b68a84e6-fe0d-4f26-b3fd-ef5f6d1944ad)
 
  
 cat << stop > herecheck.txt
@@ -411,6 +457,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+![319431153-588ed472-4e89-471d-a11e-de8d15296821](https://github.com/user-attachments/assets/371f80a7-e844-41c4-a3f9-6c573146a4ab)
 
 
 cat < scriptest.sh 
@@ -450,7 +497,8 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+ ![319431226-0c14a3e5-23c1-4da7-9813-6e123505567e](https://github.com/user-attachments/assets/5541f9aa-300d-4d01-a960-aee9768faff1)
+
 ls file1
 ## OUTPUT
 
@@ -461,12 +509,14 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![319431402-f7dd3dc5-e458-40c5-b65c-f155aa31dc17](https://github.com/user-attachments/assets/27737d3e-988e-4525-8abb-92d8cd346651)
+
 abcd
  
 echo $?
  ## OUTPUT
 
+![319431412-c842ce43-7d54-4ba3-b7ec-50da158c51ee](https://github.com/user-attachments/assets/1fc81144-f6a1-4fba-bd58-3a163abef9ac)
 
  
 # mis-using string comparisons
@@ -506,6 +556,7 @@ chmod 755 strcomp.sh
 ./strcomp.sh 
 ## OUTPUT
 
+![319431442-8dba7800-b309-4d0c-99fc-dbc7d1651e60](https://github.com/user-attachments/assets/0309000b-023c-4932-9507-ad2271e44f9d)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -1087,6 +1138,8 @@ else
 fi
 ```
 ## OUTPUT 
+![319431716-0c65c410-0709-44dc-bb09-5121ba7c0020](https://github.com/user-attachments/assets/e665cb5b-1e8d-4c3b-b4da-1e76a2a0f7ce)
+![319431777-314d1e38-aa8a-4463-898d-533444575494](https://github.com/user-attachments/assets/788f2237-13d6-4eaa-9ab1-9e5d9753a0d2)
 
 
 # RESULT:
